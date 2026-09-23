@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Kumar | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Scroll progress ruler ===== -->
+  <div class="scroll-ruler" aria-hidden="true">
+    <div class="scroll-ruler-fill" id="scrollFill"></div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">AK</span>
+        <span class="logo-text">Aditya Kumar</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="theme-toggle" role="group" aria-label="Choose page theme">
+          <button type="button" class="theme-btn active" data-theme-btn="day" aria-pressed="true">Day</button>
+          <button type="button" class="theme-btn" data-theme-btn="night" aria-pressed="false">Night</button>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Home Section ===== -->
+  <section id="home" class="section home-section">
+    <div class="margin-rule" aria-hidden="true"></div>
+    <div class="home-content">
+      <p class="greeting">Hi, I'm</p>
+      <h1 class="home-name">Aditya Kumar</h1>
+      <p class="home-role">Aspiring software developer, building the fundamentals</p>
+      <p class="home-intro">
+        I'm a 2nd year B.Tech CSE student at ABES Engineering College, Ghaziabad,
+        passionate about web development and problem solving. I love turning
+        ideas into clean, simple code.
+      </p>
+
+      <div class="home-buttons">
+        <a href="#contact" class="btn btn-primary">Contact me</a>
+        <a href="#projects" class="btn btn-secondary">View projects</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:aditya.kumar@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section about-section">
+    <div class="margin-rule" aria-hidden="true"></div>
+    <div class="section-head">
+      <h2 class="section-title">About me</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-image">
+        <div class="about-img-box">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p>
+          Hi! I'm <strong>Aditya Kumar</strong>, a second-year B.Tech Computer
+          Science Engineering student at <strong>ABES Engineering College,
+          Ghaziabad</strong>. I enjoy exploring how websites and apps are built,
+          and I'm currently strengthening my fundamentals in programming and
+          web development.
+        </p>
+        <p>
+          I'm a quick learner who loves taking on new challenges, and I'm
+          always excited to build small projects that help me apply what I
+          study in class. My goal is to grow into a skilled software developer.
+        </p>
+
+        <div class="about-info">
+          <div class="info-item">
+            <span class="info-label">Name</span>
+            <span>Aditya Kumar</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Course</span>
+            <span>B.Tech CSE (2nd year)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">College</span>
+            <span>ABES Engineering College, Ghaziabad</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <span>aditya.kumar@example.com</span>
+          </div>
+        </div>
+
+        <div class="exploring">
+          <h4>Currently exploring</h4>
+          <div class="chip-row">
+            <span class="chip">React</span>
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">Data Structures</span>
+            <span class="chip">Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="margin-rule" aria-hidden="true"></div>
+    <div class="section-head">
+      <h2 class="section-title">My skills</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+        <div class="tick-meter" role="img" aria-label="Comfortable, level 4 of 5">
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick"></span>
+        </div>
+        <p class="skill-level">Comfortable</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <div class="tick-meter" role="img" aria-label="Comfortable, level 4 of 5">
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick"></span>
+        </div>
+        <p class="skill-level">Comfortable</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+        <div class="tick-meter" role="img" aria-label="Practicing, level 3 of 5">
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+        </div>
+        <p class="skill-level">Practicing</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>C++</h3>
+        <div class="tick-meter" role="img" aria-label="Practicing, level 3 of 5">
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick filled"></span>
+          <span class="tick"></span>
+          <span class="tick"></span>
+        </div>
+        <p class="skill-level">Practicing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="margin-rule" aria-hidden="true"></div>
+    <div class="section-head">
+      <h2 class="section-title">My projects</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="filter-row" role="group" aria-label="Filter projects by technology">
+      <button type="button" class="filter-btn active" data-filter="all">All</button>
+      <button type="button" class="filter-btn" data-filter="html">HTML</button>
+      <button type="button" class="filter-btn" data-filter="css">CSS</button>
+      <button type="button" class="filter-btn" data-filter="javascript">JavaScript</button>
+      <button type="button" class="filter-btn" data-filter="c++">C++</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card" data-tags="html css javascript">
+        <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+        <h3>Simple Calculator</h3>
+        <p>A basic calculator built using HTML, CSS, and JavaScript that performs addition, subtraction, multiplication, and division.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="html css javascript">
+        <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+        <h3>To-Do List App</h3>
+        <p>A to-do list application where users can add, complete, and delete daily tasks, with data handled using JavaScript.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tags="c++">
+        <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+        <h3>Number Guessing Game</h3>
+        <p>A C++ console-based game where the user guesses a randomly generated number with limited attempts and helpful hints.</p>
+        <div class="project-tags">
+          <span>C++</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="filter-empty" id="filterEmpty" hidden>No projects use that tag yet &mdash; try a different filter.</p>
+  </section>
+
+  <!-- ===== Resume Section ===== -->
+  <section id="resume" class="section resume-section">
+    <div class="margin-rule" aria-hidden="true"></div>
+    <div class="section-head">
+      <h2 class="section-title">Resume</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="resume-content">
+      <p>
+        Want to know more about my education and skills? Download my resume below.
+      </p>
+      <a href="#" class="btn btn-primary" download>
+        <i class="fa-solid fa-download"></i> Download resume
+      </a>
+
+      <div class="resume-timeline">
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p>ABES Engineering College, Ghaziabad — 2nd year (present)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-node"><i class="fa-solid fa-school"></i></div>
+          <div>
+            <h3>Senior Secondary Education (Class 12th)</h3>
+            <p>Completed schooling with Science stream</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="margin-rule" aria-hidden="true"></div>
+    <div class="section-head">
+      <h2 class="section-title">Contact me</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p>aditya.kumar@example.com</p>
+          <button type="button" class="copy-btn" id="copyEmailBtn" aria-label="Copy email address">Copy</button>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Ghaziabad, Uttar Pradesh, India</p>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <p>+91 XXXXX XXXXX</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jordan Lee" required />
+          <span class="field-error" id="nameError" role="alert"></span>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <span class="field-error" id="emailError" role="alert"></span>
+        </div>
+
+        <div class="field-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a little about the project or opportunity..." required></textarea>
+          <span class="field-error" id="messageError" role="alert"></span>
+        </div>
+
+        <!-- Honeypot field: hidden from real visitors, catches simple bots -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Aditya Kumar. All rights reserved.</p>
+    <p class="footer-note">Built with HTML, CSS and JavaScript, no frameworks used.</p>
+    <div class="footer-socials">
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- ===== Scroll to top button ===== -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
